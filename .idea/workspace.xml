@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="73ad2ba6-1a28-4218-ad2e-54da8e92e7bb" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1Tbvib42A9z9lZoDtc1Ub1JePsr" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="10.16.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/stylesheets" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Documents\WebstormProjects\VMCS\public\stylesheets" />
+      <recent name="D:\Documents\WebstormProjects\VMCS\public\javascripts" />
+      <recent name="D:\Documents\WebstormProjects\VMCS\views" />
+      <recent name="D:\Documents\WebstormProjects\VMCS\routes" />
+      <recent name="D:\Documents\WebstormProjects\VMCS\node_modules\dao" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Documents\WebstormProjects\VMCS\public\javascripts" />
+      <recent name="D:\Documents\WebstormProjects\VMCS\public\images" />
+      <recent name="D:\Documents\WebstormProjects\VMCS\public\stylesheets" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="73ad2ba6-1a28-4218-ad2e-54da8e92e7bb" name="Default Changelist" comment="" />
+      <created>1573741737338</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1573741737338</updated>
+      <workItem from="1573741772609" duration="19780000" />
+      <workItem from="1573828645491" duration="7946000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

@@ -1,0 +1,40 @@
+<%- include Login_Reg_Header %>
+<!-- Form Panel    -->
+<div class="col-lg-6 bg-white">
+    <div class="form d-flex align-items-center">
+        <div class="content">
+            <form class="text-left form-validate" role="form" method="post">
+                <div class="form-group-material">
+                    <input id="register-username" type="text" name="username" required
+                           data-msg="Please enter your username" class="input-material">
+                    <label for="register-username" class="label-material">Username</label>
+                </div>
+                <div class="form-group-material">
+                    <input id="register-password" type="password" name="password" required
+                           data-msg="Please enter your password" class="input-material">
+                    <label for="register-password" class="label-material">Password </label>
+                </div>
+                <div class="form-group-material">
+                    <input id="register-password1" type="password" name="confirmPassword" required
+                           data-msg="Please enter your password again" class="input-material">
+                    <label for="register-password" class="label-material">Confirm Password </label>
+                </div>
+                <div class="form-group-material">
+                    <input id="register-email" type="email" name="email" required
+                           data-msg="Please enter a valid email address" class="input-material">
+                    <label for="register-email" class="label-material">Email Address </label>
+                </div>
+                <div class="form-group-material">
+                    <input id="register-telephone" type="tel" name="telephone" required
+                           data-msg="Please enter a valid telephone number" class="input-material">
+                    <label for="register-telephone" class="label-material">Telephone </label>
+                </div>
+                <div class="form-group text-center">
+                    <input id="register" type="submit" value="Register" class="btn btn-primary">
+                </div>
+            </form>
+            <small>Already have an account? </small><a href="/login" class="signup">Login</a>
+        </div>
+    </div>
+</div>
+<%- include Login_Reg_Footer %>
