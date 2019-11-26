@@ -30,7 +30,7 @@ router.route('/login')
         res.render('login', {title: '用户登录'});
     })
     .post(function (req, res) {
-        pgclient.select('test', {'username': req.body.username}, '', function (result) {
+        pgclient.select('admin', {'username': req.body.username}, '', function (result) {
             if (result[0] === undefined) {
                 console.log(result);
                 res.send("没有该用户");
@@ -72,13 +72,13 @@ router.route('/reg')
         console.log(req.body.confirmPassword);
         console.log(req.body.email);
         console.log(req.body.telephone);
-        pgclient.save('test', {
+        pgclient.save('admin', {
             'username': req.body.username,
             'password': req.body.confirmPassword,
             'email': req.body.email,
             'telephone':req.body.telephone
         }, function (err) {
-            pgclient.select('test', {'username': req.body.username}, '', function (result) {
+            pgclient.select('admin', {'username': req.body.username}, '', function (result) {
                 if (result[0] === undefined) {
                     res.send('注册没有成功申请，重新注册');
                 } else {
