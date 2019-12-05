@@ -2,31 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73ad2ba6-1a28-4218-ad2e-54da8e92e7bb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/DefaultHead.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/javascripts/leaflet.ChineseTmsProviders.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/javascripts/leafletMAP.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendor/leaflet/images/layers-2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendor/leaflet/images/layers.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendor/leaflet/images/marker-icon-2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendor/leaflet/images/marker-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendor/leaflet/images/marker-shadow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendor/leaflet/leaflet-src.esm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendor/leaflet/leaflet-src.esm.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendor/leaflet/leaflet-src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendor/leaflet/leaflet-src.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendor/leaflet/leaflet.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendor/leaflet/leaflet.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendor/leaflet/leaflet.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/javascripts/bs-custom-file-input.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/sendmail.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/user.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/user_update.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/volunteers_add.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/volunteers_search.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/volunteers_update.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/javascripts/front.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascripts/front.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/font-awesome/css/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/font-awesome/css/font-awesome.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/Footer.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/Footer.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/Header_Search.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/Header_Search.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/Navbar.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/Navbar.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/dao/pgHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/dao/pgHelper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/DefaultHead.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/userHeadImage/DefaultHead.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/avatar-0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/javascripts/mapDivresize.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascripts/mapDivresize.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/volunteers.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/volunteers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/Footer.ejs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/Header_Search.ejs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/Login_Reg_Footer.ejs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/Login_Reg_Header.ejs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/Navbar.ejs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/charts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/forms.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/views/index.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/login.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/login.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/register.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/register.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/tables.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/users.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/volunteers.ejs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,22 +56,24 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.16.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/views" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Documents\WebstormProjects\VMCS\public\images\userHeadImage" />
       <recent name="D:\Documents\WebstormProjects\VMCS\public\javascripts" />
       <recent name="D:\Documents\WebstormProjects\VMCS\public\images" />
       <recent name="D:\Documents\WebstormProjects\VMCS\public\stylesheets" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Documents\WebstormProjects\VMCS\public\images" />
+      <recent name="D:\Documents\WebstormProjects\VMCS\views" />
       <recent name="D:\Documents\WebstormProjects\VMCS\public\javascripts" />
+      <recent name="D:\Documents\WebstormProjects\VMCS\public\images" />
       <recent name="D:\Documents\WebstormProjects\VMCS\public\vendor" />
       <recent name="D:\Documents\WebstormProjects\VMCS\public\stylesheets" />
-      <recent name="D:\Documents\WebstormProjects\VMCS\views" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -96,7 +104,11 @@
       <workItem from="1574324941531" duration="868000" />
       <workItem from="1574730167750" duration="891000" />
       <workItem from="1574770426629" duration="968000" />
-      <workItem from="1574839738648" duration="22502000" />
+      <workItem from="1574839738648" duration="45671000" />
+      <workItem from="1575211097918" duration="23705000" />
+      <workItem from="1575294185515" duration="16940000" />
+      <workItem from="1575315243230" duration="42008000" />
+      <workItem from="1575495049471" duration="4243000" />
     </task>
     <task id="LOCAL-00001" summary="修改数据库">
       <created>1574770746021</created>
@@ -112,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574770799119</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="添加地图">
+      <created>1574953247844</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1574953247845</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,6 +152,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="修改数据库" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改数据库" />
+    <MESSAGE value="添加地图" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加地图" />
   </component>
 </project>

@@ -5,12 +5,12 @@ var bodyParser = require('body-parser');
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
+var userRouter = require('./routes/user');
 var volunteersRouter = require('./routes/volunteers');
 //var loginRouter = require('./routes/login');
 
 //添加引用模块
 var session = require('express-session');
-
 
 var app = express();
 
@@ -31,9 +31,14 @@ app.use(session({
 
 app.use('/public', express.static(path.join(__dirname, 'public')));
 
+// 当用户修改信息时，添加下行代码确保能访问到public文件夹中的内容
+app.use('/user/public', express.static(path.join(__dirname, 'public')));
+app.use('/volunteers/public', express.static(path.join(__dirname, 'public')));
+
+
 app.use('/', indexRouter);
 app.use('/volunteers', volunteersRouter);
-//app.use('/login', loginRouter);
+app.use('/user',userRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

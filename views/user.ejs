@@ -16,15 +16,8 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <!-- 添加leaflet.js的引用-->
-    <link rel="stylesheet" href="../public/vendor/leaflet/leaflet.css">
-    <script src="../public/vendor/leaflet/leaflet.js"></script>
-    <!-- 地图底图切换脚本 -->
-    <script src="../public/javascripts/leaflet.ChineseTmsProviders.js"></script>
-    <!-- 添加自定义底图使用脚本 -->
-    <script src="../public/javascripts/leafletMAP.js"></script>
 </head>
-<body onload="init()">
+<body>
 <header class="header">
     <nav class="navbar navbar-expand-lg">
         <div class="search-panel">
@@ -120,11 +113,50 @@
     <div class="page-content" id="page-content">
         <div class="page-header no-margin-bottom" id="page-header">
             <div class="container-fluid">
-                <h2 class="h5 no-margin-bottom">Home</h2>
+                <h2 class="h5 no-margin-bottom">User </h2>
             </div>
         </div>
-        <div class="container-fluid" id="mapDiv">
+        <div class="container-fluid">
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/home">Home</a></li>
+                <li class="breadcrumb-item active">User</li>
+            </ul>
         </div>
+        <section class="no-padding-top" id="userMessage">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-4"></div>
+                    <div class="col-lg-4" >
+                        <div class="block margin-bottom-sm">
+                            <div class="title">
+                                <strong>个&nbsp;人&nbsp;信&nbsp;息&nbsp;/&nbsp;</strong>
+                                <span class="breadcrumb-item"><a href="/user/user_update/<%= users.username %>">修改信息</a></span>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table" style="text-align: center;">
+                                    <tbody>
+                                    <tr>
+                                        <td rowspan="3" style="text-align: center; width: 160px"><img
+                                                    src="<%= data[0].imageurl %>" width="130"></td>
+                                        <td>UserName</td>
+                                        <td><strong><%= data[0].username %></strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td>E-mail</td>
+                                        <td><%= data[0].email %></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Telephone</td>
+                                        <td><%= data[0].telephone %></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <footer class="footer" id="footer">
             <div class="footer__block block no-margin-bottom">
                 <div class="container-fluid text-center">
@@ -143,11 +175,19 @@
 <script src="../public/vendor/jquery-validation/jquery.validate.min.js"></script>
 <script src="../public/javascripts/front.js"></script>
 <script src="../public/javascripts/resize.js"></script>
-<script src="../public/javascripts/mapDivresize.js"></script>
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://unpkg.com/bootstrap-table@1.15.5/dist/bootstrap-table.min.js"></script>
-<!-- Latest compiled and minified Locales -->
-<script src="https://unpkg.com/bootstrap-table@1.15.5/dist/locale/bootstrap-table-zh-CN.min.js"></script>
-<script src="../public/javascripts/bootstrap-table-export.js"></script>
+<!-- 实时更新确保userMessage上下居中 -->
+<script>
+    var height1 = document.getElementById("page-content").offsetHeight;
+    var height2 = document.getElementById("page-header").offsetHeight;
+    var height3 = document.getElementById("footer").offsetHeight;
+    var height4 = document.getElementById("userMessage").offsetHeight;
+    var height = (height1 - height2 - height3 - height4 - 200) / 2;
+    document.getElementById("userMessage").style.marginTop = height + "px";
+    $("#page-content").resize(function() {
+        var height1 = document.getElementById("page-content").offsetHeight;
+        var height = (height1 - height2 - height3 - height4 - 200) / 2;
+        document.getElementById("userMessage").style.marginTop = height + "px";
+    });
+</script>
 </body>
 </html>

@@ -23,6 +23,16 @@
     <script src="../public/javascripts/leaflet.ChineseTmsProviders.js"></script>
     <!-- 添加自定义底图使用脚本 -->
     <script src="../public/javascripts/leafletMAP.js"></script>
+
+    <script src="https://cdn.tiny.cloud/1/7w2qmnkguo25719hih6e1py9autio5fy8d1lp25ekt09sl4x/tinymce/5.0.14-54/tinymce.min.js"></script>
+    <script>
+        tinymce.init({
+            selector: '#mytextarea',
+            menu:false,
+            menubar:false,
+        });
+    </script>
+
 </head>
 <body onload="init()">
 <header class="header">
@@ -91,7 +101,7 @@
                             class="icon-flow-branch"></i>志愿者接送 </a>
                 <ul id="VolunteerTransfer" class="collapse list-unstyled ">
                     <li><a href="/volunteers">最佳接送点分析 </a></li>
-                    <li><a href="/volunteers_add">最佳路径分析 </a></li>
+                    <li><a href="/volunteers/volunteers_search">最佳路径分析 </a></li>
                     <li><a href="#">志愿者回校路线 </a></li>
                     <li><a href="#">发送发送信息 </a></li>
                 </ul>
@@ -120,11 +130,43 @@
     <div class="page-content" id="page-content">
         <div class="page-header no-margin-bottom" id="page-header">
             <div class="container-fluid">
-                <h2 class="h5 no-margin-bottom">Home</h2>
+                <h2 class="h5 no-margin-bottom">Volunteers </h2>
             </div>
         </div>
-        <div class="container-fluid" id="mapDiv">
+        <div class="container-fluid">
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/volunteers">Volunteers </a></li>
+                <li class="breadcrumb-item active">发送信息</li>
+            </ul>
         </div>
+        <section class="no-padding-top">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-8">
+                        <div class="block">
+                            <div class="title"><strong class="d-block">发送信息</strong></div>
+                            <div class="block-body">
+                                <form method="post">
+                                    <div class="form-group">
+                                        <label class="form-control-label">收件人</label>
+                                        <input type="text" placeholder="请输入邮箱，多个邮箱是请以分号分隔。" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-control-label">内容</label>
+                                        <textarea id="mytextarea" style="height: 500px"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="submit" value="Send" class="btn btn-primary">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
         <footer class="footer" id="footer">
             <div class="footer__block block no-margin-bottom">
                 <div class="container-fluid text-center">
@@ -144,10 +186,5 @@
 <script src="../public/javascripts/front.js"></script>
 <script src="../public/javascripts/resize.js"></script>
 <script src="../public/javascripts/mapDivresize.js"></script>
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://unpkg.com/bootstrap-table@1.15.5/dist/bootstrap-table.min.js"></script>
-<!-- Latest compiled and minified Locales -->
-<script src="https://unpkg.com/bootstrap-table@1.15.5/dist/locale/bootstrap-table-zh-CN.min.js"></script>
-<script src="../public/javascripts/bootstrap-table-export.js"></script>
 </body>
 </html>

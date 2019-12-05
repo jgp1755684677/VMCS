@@ -120,11 +120,62 @@
     <div class="page-content" id="page-content">
         <div class="page-header no-margin-bottom" id="page-header">
             <div class="container-fluid">
-                <h2 class="h5 no-margin-bottom">Home</h2>
+                <h2 class="h5 no-margin-bottom">Volunteers </h2>
             </div>
         </div>
-        <div class="container-fluid" id="mapDiv">
+        <div class="container-fluid">
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/volunteers">Volunteers </a></li>
+                <li class="breadcrumb-item active">志愿者查询</li>
+            </ul>
         </div>
+        <section class="no-padding-top">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-4"></div>
+                    <!-- Horizontal Form-->
+                    <div class="col-lg-4">
+                        <div class="block">
+                            <div class="title"><strong class="d-block">志愿者查询</strong></div>
+                            <div class="block-body">
+                                <form class="form-horizontal" action="/volunteers/search" method="post">
+                                    <div class="form-group row">
+                                        <label class="col-sm-4 form-control-label" style="margin-top: 10px; text-align: center;">Volunteer Name</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" id="volunteerName" name="volunteerName" placeholder="Volunteer Name" class="form-control">
+                                            <small class="form-text">提示：请输入志愿者的姓名</small>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-4 form-control-label" style="margin-top: 10px; text-align: center;">Telephone</label>
+                                        <div class="col-sm-8">
+                                            <input type="tel" id="volunteerTelephone" name="volunteerTelephone" placeholder="Telephone" class="form-control">
+                                            <small class="form-text">提示：请输入志愿者的电话</small>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-4 form-control-label" style="margin-top: 10px; text-align: center;">Group</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" id="volunteerGroup" name="volunteerGroup" placeholder="Group" class="form-control">
+                                            <small class="form-text">提示：请输入志愿者的组别</small>
+                                            <small class="form-text">志愿者组别有：球迷体验区一、球迷体验区二、市场、观众引导、竞赛、机动、IT、兴奋剂检测、制证中心、电视转播、医疗、媒体、接待、观众引导</small>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-sm-2 offset-sm-3">
+                                            <input type="reset" value="ReSet" class="btn btn-primary">
+                                        </div>
+                                        <div class="col-sm-2 offset-sm-1">
+                                            <input type="submit" value="Search" class="btn btn-primary">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <footer class="footer" id="footer">
             <div class="footer__block block no-margin-bottom">
                 <div class="container-fluid text-center">
@@ -144,10 +195,5 @@
 <script src="../public/javascripts/front.js"></script>
 <script src="../public/javascripts/resize.js"></script>
 <script src="../public/javascripts/mapDivresize.js"></script>
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://unpkg.com/bootstrap-table@1.15.5/dist/bootstrap-table.min.js"></script>
-<!-- Latest compiled and minified Locales -->
-<script src="https://unpkg.com/bootstrap-table@1.15.5/dist/locale/bootstrap-table-zh-CN.min.js"></script>
-<script src="../public/javascripts/bootstrap-table-export.js"></script>
 </body>
 </html>
